@@ -87,13 +87,6 @@ class Carousel {
   }
 }
 
-const exampleCarousel = new Carousel(galleryContainer,speakerItem, galleryCtrls);
-exampleCarousel.setControls();
-exampleCarousel.useControls();
-
-/* galleryCtrlsContainer.addEventListener('mouseover', () => {
-  galleryCtrlsContainer.classList.add('gallery-ctrls-visible');
-});
-galleryCtrlsContainer.addEventListener('mouseout', () => {
-  galleryCtrlsContainer.classList.remove('gallery-ctrls-visible');
-}) */
+const imageCarousel = new Carousel(galleryContainer,speakerItem, galleryCtrls);
+imageCarousel.setControls();
+imageCarousel.useControls();
