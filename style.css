@@ -18,7 +18,7 @@ body {
     background-color: var(--BGCOLOR);
     color: whitesmoke;
     font-family: 'Quicksand', sans-serif;
-    min-width: 100%;
+    width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -86,7 +86,7 @@ header h1::before {
 .reg-btn a:hover {
     color: #e5bcbc;
 }
-.menu-icon {
+.menu-cont {
     display: none;
     font-size: 2rem;
     cursor: pointer;
@@ -100,20 +100,19 @@ header h1::before {
     nav {
         position: absolute;
         top: 100%;
-        right: -100%;
-        width: 60%;
-        height: 100vh;
-        transition: all .50s ease;
+        right: 0px;
+        width: 1px;
+        height: 80vh;
+        transition: all .50s ease-in-out;
         background-color: #333333bb; 
+        overflow: hidden;
     }
-    .open {
-        right: 1%;
-    }
+    
     .navbar {
         height: 220px;
         display: flex;
         flex-direction: column;
-        gap: 0px;
+        gap: 5px;
     }
     .navbar li {
         height: 44px;
@@ -129,15 +128,17 @@ header h1::before {
         padding-left: 20px;
     }
     .navbar li a:hover,
-    .navbar li a:focus {
+    .navbar li a:active {
         background-color: #808080;
         border-bottom: none;
     }
-    .menu-icon {
+    .menu-cont {
         display: block;
     }
 }
-
+.open {
+    width: 50%;
+}
 main {
     width: 100%;
     min-height: 100vh;
@@ -460,6 +461,7 @@ figcaption {
     height: 60px;
     z-index: 3;
     opacity: 1;
+    background-color: green;
 }
 .gallery-ctrls button {
     background-color: transparent;
@@ -470,7 +472,7 @@ figcaption {
     border-radius: 50%;
     cursor: pointer;
     font-size: 17px;
-    margin: 0 50px;
+    margin: 0 40px;
     padding: 0 5px;
     text-transform: capitalize;
 }

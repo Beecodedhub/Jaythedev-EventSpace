@@ -1,8 +1,11 @@
-const menu = document.querySelector('.menu-icon');
-menu.addEventListener("click", () => {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('open');
-})
+const menuCont = document.querySelector('.menu-cont');
+const openNav = document.querySelector('.fa-bars');
+
+menuCont.addEventListener("click", () => {
+  const nav = document.querySelector("nav");
+  openNav.classList.toggle("fa-xmark");
+  nav.classList.toggle('open');
+});
 
 // Set the date we're counting down to
 let countDownDate = new Date("Dec 2, 2023 15:37:25").getTime();
