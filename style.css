@@ -18,7 +18,6 @@ body {
     background-color: var(--BGCOLOR);
     color: whitesmoke;
     font-family: 'Quicksand', sans-serif;
-    width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -37,13 +36,14 @@ header {
     z-index: 20;
 }
 header h1 {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     font-family: 'Saira Condensed', sans-serif;
     white-space: nowrap;
 }
 header h1::before {
     content: "📅";
     padding-right: 5px;
+    font-size: 30px;
 }
 .header-span {
     color: tomato;
@@ -92,10 +92,13 @@ header h1::before {
     cursor: pointer;
     z-index: 3;
 }
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 770px) {
     header {
         padding-left: 10px;
         padding-right: 10px;
+    }
+    header h1 {
+        font-size: 1.1rem;
     }
     nav {
         position: absolute;
@@ -186,7 +189,6 @@ section {
 .btn {
     font-size: 0.65rem;
     width: 6.5rem;
-    /* height: 2.2rem; */
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 20px;
@@ -809,10 +811,12 @@ footer .footer-main {
 }
 .wrapper h1 {
     margin-bottom: 15px;
+    font-size: 1.2rem;
 }
 .footer-main .about h1::before {
     content: "📅";
     padding-right: 5px;
+    font-size: 30px;
 }
 .footer-span {
     color: tomato;

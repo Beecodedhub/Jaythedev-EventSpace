@@ -3,10 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New User Form</title>
+    <link rel="stylesheet" href="registration.css">
+    <title>Registration Form</title>
 </head>
 <body>
-    <h1>Registration form is under Construction!!!<br>Please check back soon.</h1>
-    <a href="index.html">Back to home</a>
+    <header>
+        <h1>JayTheDev_<span class="header-span">Space</span></h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button title="Register now" class="reg-btn"><a href="registration.html">REGISTER NOW</a></button>
+        <div class="menu-cont">
+            <i class="fa-solid fa-bars" style="color: #cbd0d7;"></i>
+        </div>
+    </header>
+    <main>
+        <div class="reg-container">
+            <div class="reg-text">
+                <h1>JayTheDev_<span class="header-span">Space</span></h1>
+                <p class="intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio enim atque velit dolorum neque dolore accusantium veniam dolor. Praesentium adipisci facilis est sapiente veniam nostrum id numquam recusandae, ratione officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et itaque, eius veritatis minus id nulla enim facere quae aut, voluptatum tempora, ab accusantium distinctio. Eius quisquam et at mollitia commodi.</p>
+                
+                <a href="#"><p>Privacy Policy</p></a>
+            </div>
+
+            <div class="form-container">
+
+                <div class="form-header">
+                    <h2>Welcome visitor!<h2>
+                </div>
+
+                <div class="reg-login-btn">
+                    <button title="Create your account">Create your account</button>
+                    <button title="Login">Login</button>
+                </div>
+                <hr class="top-rule">
+                <div class="form-wrapper">
+                    <form action="">
+                        <input id="name" type="text" placeholder="Name" required>
+                        <input id="email" type="email" placeholder="Email" required>
+                        <input id="phone" type="tel" placeholder="Phone Number" pattern="[0-9]{11}">    
+                        <input class="last-input" id="password" type="password" placeholder="Password" required>
+                        <input id="toggle-password" type="checkbox">
+                        <label for="toggle-password">Show Password</label>
+                            
+                        <button title="Register" type="submit">Register</button>
+                    </form>
+                </div>
+                <a href="#"><p>Forget Password?</p></a>
+                <hr class="bottom-rule">
+                <div class="google-github">
+                    <button>Connect with Google</button>
+                    <button>Connect with Github</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-main">
+            <div class="about">
+                <div class="wrapper">
+                    <h1>JayTheDev_<span class="footer-span">Space</span></h1>
+                    <p>JayTheDev_<span class="footer-span">Space</span> is one of the top event management companies in Lagos State. With more than 500 high-profile events in our 1-year history, we offer a complete range of services for corporate, non-profits and school events of all kinds.</p>
+                </div>
+                <div class="social-icon-container">
+                    <a href="https://www.facebook.com/profile.php?id=100092444084021&mibextid=LQQJ4d"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                    <a href="https://wa.me/2347039136121"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+                    <a href="https://x.com/drizzymane07"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>EVENTS</h3>
+                <a href=""><p>Upcoming</p></a>
+                <a href=""><p>Past</p></a>
+            </div>
+            <div class="footer-links">
+                <h3>HELP</h3>
+                <a href=""><p>Terms & Conditions</p></a>
+                <a href=""><p>Contact Us</p></a>
+                <a href=""><p>Privacy Policy</p></a>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>© Copyright 2023 - JayTheDev_<span class="footer-span">Space</span> by JayTheDev</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/285d3d18ac.js" crossorigin="anonymous"></script>
 </body>
 </html>

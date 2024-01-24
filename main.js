@@ -8,7 +8,7 @@ menuCont.addEventListener("click", () => {
 });
 
 // Set the date we're counting down to
-let countDownDate = new Date("Dec 2, 2023 15:37:25").getTime();
+let countDownDate = new Date("Mar 2, 2024 15:37:25").getTime();
 
 // Update the count down every 1 second
 let countDown = setInterval(() => {
